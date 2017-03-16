@@ -1,25 +1,24 @@
-# teamdarkred
+# README
 
-Dipesh made some changes
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
+Things you may want to cover:
 
+* Ruby version
 
-JST MADE SOME CHANGES
+* System dependencies
 
+* Configuration
 
-TJ wrote something here.
+* Database creation
 
-AAM added
+* Database initialization
 
-JOSHUA MADE A CHANGE MOFOS
-Dipesh made some changes
+* How to run the test suite
 
+* Services (job queues, cache servers, search engines, etc.)
 
+* Deployment instructions
 
-
-
-
-It's Lit 
-
-
-
+* ...
