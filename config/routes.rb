@@ -4,4 +4,9 @@ Rails.application.routes.draw do
   get 'welcome/index'
  
   root 'welcome#index'
+  
+  get 'auth/:provider/callback' => 'sessions#create'
+  post 'logout' => 'sessions#destroy'
+  get 'auth/failure' => 'sessions#failure'
+  
 end
