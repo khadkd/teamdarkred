@@ -54,5 +54,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 
 #twitter gem files
-gem 'omniauth'
 gem 'omniauth-twitter'
