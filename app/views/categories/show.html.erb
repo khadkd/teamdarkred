@@ -7,4 +7,32 @@
   <strong>Description:</strong>
   <%= @category.text %>
 </p>
+<h2>Cards</h2>
+<% @category.cards.each do |card| %>
+  <p>
+    <strong>Front:</strong>
+    <%= card.front %>
+  </p>
+ 
+  <p>
+    <strong>Back:</strong>
+    <%= card.back %>
+  </p>
+<% end %>
+<h2>Add a card:</h2>
+<%= form_for([@category, @category.cards.build]) do |f| %>
+  <p>
+    <%= f.label :front %><br>
+    <%= f.text_area :front %>
+  </p>
+  <p>
+    <%= f.label :back %><br>
+    <%= f.text_area :back %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+<%= link_to 'Edit', edit_category_path(@category) %> |
+
 <%= link_to 'Back', categories_path %>

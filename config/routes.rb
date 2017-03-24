@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :categories
+  resources :categories do
+    resources :cards
+  end
   devise_for :users
   get 'welcome/index'
  
