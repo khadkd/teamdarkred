@@ -6,6 +6,7 @@ class CategoriesController < ApplicationController
     @cateogry = Category.find(params[:id])
     end
     def new
+        @category = Category.new
     end
     def create
         @cateogry = Category.new(category_params)
