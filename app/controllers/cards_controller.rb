@@ -1,4 +1,8 @@
+
 class CardsController < ApplicationController
+     
+    def index
+    end
   def create
     @category = Category.find(params[:category_id])
     @card = @category.cards.create(card_params)

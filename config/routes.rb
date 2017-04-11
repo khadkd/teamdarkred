@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'cards/index'
+
   resources :categories do
     resources :cards
   end
