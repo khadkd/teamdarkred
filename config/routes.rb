@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'cards/viewanswer'
+
+  get 'cards/viewanswe'
+
   get 'cards/index'
 
   resources :categories do
