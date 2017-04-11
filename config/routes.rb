@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   get 'auth/failure' => 'sessions#failure'
   get 'auth/twitter', :as => 'login'
   
+  resources :contacts
+  
 end
