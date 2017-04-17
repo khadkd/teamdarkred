@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  card_status: MyString
+  user: one
+  card: one
+
+two:
+  card_status: MyString
+  user: two
+  card: two
