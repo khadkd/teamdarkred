@@ -9,15 +9,24 @@
 </p>
 <h2>Cards</h2>
 <% @category.cards.each do |card| %>
-  <p>
-    <strong>Front:</strong>
-    <%= card.front %>
-  </p>
- 
-  <p>
-    <strong>Back:</strong>
-    <%= card.back %>
-  </p>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <button type="button" class="btn btn-sm pull-left">Previous Question</button>
+      <button type="button" class="btn btn-danger btn-sm pull-right">LEARNING</button>
+      &nbsp;
+     <center><h2><%= card.front %></h2></center>
+      
+     
+      
+      <div class="col align-self-end abs">
+  
+    </div>
+    <div class="space_lg">&nbsp;</div>
+      <%= button_to "View Answer", card_answer_path(card) ,{ :class=>"btn btn-primary btn-lg btn-block" }%>
+   
+    </div>
+  </div>
+
 <% end %>
 <h2>Add a card:</h2>
 <%= form_for([@category, @category.cards.build]) do |f| %>

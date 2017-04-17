@@ -61,4 +61,7 @@ gem 'devise'
 #twitter gem files
 gem 'omniauth-twitter'
 
+## Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate', '~> 3.1.0'
+
 

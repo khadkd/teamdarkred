@@ -4,6 +4,10 @@ class CardsController < ApplicationController
     @card = @category.cards.create(card_params)
     redirect_to category_path(@category)
   end
+  
+  def answer
+    @card = Card.find(params[:id])
+  end
  
   private
     def card_params
