@@ -13,8 +13,8 @@
 
   </div>
   &nbsp;
-   <%= button_to "I knew the answer", next_card_path(@card) ,{ :class=>"btn btn-success btn-lg btn-block" }%>
-   <%= button_to "I had no fucking clue about this one", next_card_path(@card) ,{ :class=>"btn btn-danger btn-lg btn-block" }%>
+   <%= button_to "I knew the answer", next_card_path(@card) ,params.merge(stat: 'Know This'), { :class=>"btn btn-success btn-lg btn-block" }%>
+   <%= button_to "I had no fucking clue about this one", next_card_path(@card) ,params.merge(stat: 'Learning'), { :class=>"btn btn-danger btn-lg btn-block" }%>
     </div>
     
 </div>
