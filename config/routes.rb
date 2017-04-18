@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   
   post '/cards/:id/answer' => 'cards#answer', :as => :card_answer
   
+  post '/cards/:id/next_card' => 'cards#next_card', :as => :next_card
+  
 end

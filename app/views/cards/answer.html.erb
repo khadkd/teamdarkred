@@ -13,8 +13,8 @@
 
   </div>
   &nbsp;
-   <button type="button" class="btn btn-success btn-lg btn-block">I knew the answer.</button>
-   <button type="button" class="btn btn-danger btn-lg btn-block">I did not know the answer</button>
+   <%= button_to "I knew the answer", next_card_path(@card) ,{ :class=>"btn btn-success btn-lg btn-block" }%>
+   <%= button_to "I had no fucking clue about this one", next_card_path(@card) ,{ :class=>"btn btn-danger btn-lg btn-block" }%>
     </div>
     
 </div>

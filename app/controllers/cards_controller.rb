@@ -8,6 +8,11 @@ class CardsController < ApplicationController
   def answer
     @card = Card.find(params[:id])
   end
+  
+  def next_card
+    @cards = Card.all
+    @card=@cards.shuffle.first
+  end
  
   private
     def card_params
