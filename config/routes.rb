@@ -12,8 +12,12 @@ Rails.application.routes.draw do
   get 'auth/failure' => 'sessions#failure'
   get 'auth/twitter', :as => 'login'
   
-  post '/cards/:id/answer' => 'cards#answer', :as => :card_answer
+ 
+  
+  get '/cards/:id/answer' => 'cards#answer', :as => :card_answer
+
   
   post '/cards/:id/next_card' => 'cards#next_card', :as => :next_card
+  
   
 end
