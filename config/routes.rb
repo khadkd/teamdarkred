@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get '/cards/:id/answer' => 'cards#answer', :as => :card_answer
 
   
-  post '/cards/:id/next_card' => 'cards#next_card', :as => :next_card
+  get '/categories/next_card/:category_id/cards/:id' => 'cards#next_card', :as => :next_card
   
   get '/categories/card_answer/:category_id/cards/:id' => 'cards#answer', :as => :answer
   

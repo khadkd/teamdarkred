@@ -4,7 +4,7 @@
       <button type="button" class="btn btn-sm pull-left">Previous Question</button>
       <button type="button" class="btn btn-danger btn-sm pull-right">LEARNING</button>
       &nbsp;
-     <center><h2><%= @card.back %></h2></center>
+     <center><h2><%= @card.front %></h2></center>
       
      
       
@@ -12,7 +12,7 @@
   
     </div>
     <div class="space_lg">&nbsp;</div>
-      <%= button_to "View Answer", category_card_path(@card ,params.permit(:id,:card_back,:category_id).merge(card_back: @card.back)),{ :class=>"btn btn-primary btn-lg btn-block" }%>
+      <%= button_to "View Answer", answer_path(@card),{ method: :get,:class=>"btn btn-primary btn-lg btn-block" }%>
    
     </div>
   </div>
