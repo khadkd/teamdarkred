@@ -1,11 +1,16 @@
 
 <h2>Answer</h2>
+<%= debug @card %>
+<p>
+  <b>back:</b>
+  <%= @card.back %>
+</p>
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <button type="button" class="btn btn-sm pull-right">New Question</button>
      &nbsp;
-  <center><h3><% @card_back %></h3></center>
+  <center><h3><%= @card.back %></h3></center>
     
    
     

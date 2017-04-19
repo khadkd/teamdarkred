@@ -9,10 +9,8 @@ class CardsController < ApplicationController
   end
   
   def answer
-   @card_back = params[:card_back]
-   
-   redirect_to card_answer_path()
-  
+    @category = Category.find(params[:category_id])
+    @card = @category.cards.find(params[:id])
   end
   
   def next_card
