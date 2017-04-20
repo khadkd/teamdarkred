@@ -8,6 +8,7 @@
     <%= javascript_include_tag  "application", "data-turbolinks-track" => true %>
     <%= javascript_include_tag :defaults %>
     <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application' %>
 </head>
 <style>
     .rel {
@@ -35,6 +36,9 @@
                 <% else %>
                     <%= link_to "Sign Up", new_user_registration_path, { :class=>"navbar-brand" } %>
                     <%= link_to "Sign In", new_user_session_path, { :class=>"navbar-brand" }%>
+                    <a class="navbar-brand nos" href="#"><div class="logo_style_blue">F</div></a>
+                    <a class="navbar-brand nos" href="#"><div class="logo_style_orange">2</div></a>
+                    <a class="navbar-brand nos" href="#"><div class="logo_style_green">L</div></a>
                 <% end %>
             </div>
 

@@ -13,3 +13,64 @@
  *= require_tree .
  *= require_self
  */
+ .nos {
+	text-decoration: none;
+}
+.logo_style_blue {
+	background-color: #08699D;
+	color: white;
+	font: 28px/34px "Fredoka One", Helvetica, Arial, sans-serif;
+	height: 1.5em;
+	width: 1.5em;
+	text-align: center;
+	border: 5px solid white	;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 0.14em #08699D;
+	/* padding: 10px 0 0 10px; */ /* to fine tune letter position */
+}
+
+.logo_style_orange {
+	background-color: #F75F00;
+	color: white;
+	font: 28px/34px "Fredoka One", Helvetica, Arial, sans-serif;
+	height: 1.5em;
+	width: 1.5em;
+	text-align: center;
+	border: 5px solid white	;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 0.14em #F75F00;
+	/* padding: 10px 0 0 10px; */ /* to fine tune letter position */
+}
+
+.logo_style_green {
+	background-color: #2FAC1C;
+	color: white;
+	font: 28px/34px "Fredoka One", Helvetica, Arial, sans-serif;
+	height: 1.5em;
+	width: 1.5em;
+	text-align: center;
+	border: 5px solid white;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 0.13em #2FAC1C;
+	/* padding: 10px 0 0 10px; */ /* to fine tune letter position */
+}
+
+a:hover .logo_style_orange {
+	background-color: #009F7B;
+	box-shadow: 0px 0px 0px 0.13em #009F7B;
+}
+
+a:hover .logo_style_blue {
+	background-color: #F78600;
+	box-shadow: 0px 0px 0px 0.13em #F78600;
+}
+
+a:hover .logo_style_green {
+	background-color: #CB212D;
+	box-shadow: 0px 0px 0px 0.13em #CB212D;
+}
+
+
+
+
+
