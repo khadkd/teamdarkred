@@ -1,0 +1,2 @@
+module Contributor::CategoriesHelper
+end

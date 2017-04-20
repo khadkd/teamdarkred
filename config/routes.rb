@@ -2,6 +2,12 @@ Rails.application.routes.draw do
   resources :categories do
     resources :cards
   end
+  
+  namespace :contributor do
+    resources :categories do
+      resources :cards
+    end
+  end
   devise_for :users
   get 'welcome/index'
  
