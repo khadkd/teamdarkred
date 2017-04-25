@@ -1,10 +1,7 @@
 
 <h2>Answer</h2>
-<%= debug @card %>
-<p>
-  <b>back:</b>
-  <%= @card.back %>
-</p>
+
+
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
@@ -19,7 +16,7 @@
   </div>
   &nbsp;
    <%= button_to "I knew the answer", next_card_path(@category,@card), {method: :get,:class=>"btn btn-success btn-lg btn-block" }%>
-   <%= button_to "I had no fucking clue about this one", next_card_path(@category,@card), {method: :get, :class=>"btn btn-danger btn-lg btn-block" }%>
+   <%= button_to "I had no clue about this one", next_card_path(@category,@card), {method: :get, :class=>"btn btn-danger btn-lg btn-block" }%>
     </div>
     
 </div>
