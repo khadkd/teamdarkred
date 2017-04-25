@@ -12,7 +12,6 @@
  
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-         <%= button_to "I knew the answer", next_card_path(@category,@card), {method: :get,:class=>"btn btn-sm pull-left" }%>
 
       <%= button_to "Next Card", next_card_path(@category,@card), {method: :get,:class=>"btn btn-sm pull-left" }%>
       <button type="button" class="btn btn-sm pull-left">Previous Question</button>
