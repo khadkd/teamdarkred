@@ -65,5 +65,6 @@ gem 'omniauth-twitter'
 gem 'will_paginate', '~> 3.1.0'
 
 
-
-
+# Dummy seed data plugin
+gem 'faker'
+gem 'fabrication'
