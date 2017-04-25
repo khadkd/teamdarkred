@@ -32,14 +32,10 @@
                     <span class="icon-bar"></span>
                 </button>
                 <% if user_signed_in? %>
-                    <%= link_to "LOG OUT?", destroy_user_session_path, {:method => :delete,  :class=>"navbar-brand" } %> 
                 <% else %>
                     <%= link_to "Sign Up", new_user_registration_path, { :class=>"navbar-brand" } %>
                     <%= link_to "Sign In", new_user_session_path, { :class=>"navbar-brand" }%>
                 <% end %>
-                <a class="navbar-brand nos" href="#"><div class="logo_style_blue">F</div></a>
-                <a class="navbar-brand nos" href="#"><div class="logo_style_orange">2</div></a>
-                <a class="navbar-brand nos" href="#"><div class="logo_style_green">L</div></a>
             </div>
 
 
@@ -48,7 +44,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <% if user_signed_in? %>
-                            <%= link_to "VIEW CATEGORIES", categories_path, { :class=>"navbar-brand" }%> 
+                            <%= link_to "View Categories", categories_path, { :class=>"navbar-brand" }%> 
                             <%= link_to "Contribute", contributor_categories_path, { :class=>"navbar-brand" }%>
                         <% else %>
                             <%= link_to "Sign Up", new_user_registration_path, { :class=>"navbar-brand" } %>
